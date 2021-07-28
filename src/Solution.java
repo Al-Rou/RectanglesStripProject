@@ -32,8 +32,11 @@ public class Solution {
             }
         }
         //Now, it is enough that the array frequency is sorted and the maximum is returned as the answer
-        Sorting sort = new Sorting();
-        frequency = sort.sort(frequency, 0, frequency.length-1);
+        /*Sorting sort = new Sorting();
+        frequency = sort.sort(frequency, 0, frequency.length-1);*/
+        //Another sort
+        QuickSort qs = new QuickSort();
+        frequency = qs.sort(frequency, 0, frequency.length-1);
 
         return frequency[frequency.length-1];
     }
