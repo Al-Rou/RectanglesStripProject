@@ -6,6 +6,13 @@ public class RectanglesStrip {
         //int[] A = {2, 3, 1, 3}; int[] B = {2, 3, 1, 3};
         int[] A = {2, 10, 4, 1, 4}; int[] B = {4, 1, 2, 2, 5};
 
-        System.out.println(s.solution(A, B));
+        //System.out.println(s.solution(A, B));
+
+        QuickSort qs = new QuickSort();
+        A = qs.sort(A, 0, 4);
+        for(int i = 0; i < A.length; i++)
+        {
+            System.out.println(A[i]);
+        }
     }
 }
